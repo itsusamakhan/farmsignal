@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 from farmsignal.service import Service
 from farmsignal.api import app
 from farmsignal.assessment import assess
-from farmsignal.config import ROOT,DEPTHS
+from farmsignal.config import ROOT,DEPTHS,DEMO_FARM
 @pytest.fixture(scope='module')
 def service():return Service()
 def test_normal_bilingual(service):
@@ -54,7 +54,7 @@ def test_api():
 def test_fresh_forecast():
  e=fixture_evidence();n=datetime.now(timezone.utc);e['forecasts']=[dict(issue_time=(n-timedelta(hours=3)).isoformat(),valid_from=(n-timedelta(hours=3)).isoformat(),valid_until=(n+timedelta(hours=21)).isoformat(),unit='mm/24h',source='synthetic fixture',temperature_c=25.,rain_mm=2.)];assert assess(e,{},n)['forecast_status']=='fresh'
 def test_missing_crop(service):
- with patch.object(service.store,'farm',return_value={'lat':1.02,'lon':35.,'crop':None}):assert service.respond('Check planting suitability',log=False)['next_step_reason'] in ['crop','clarify']
+ with patch.object(service.store,'farm',return_value={'lat':DEMO_FARM[0],'lon':DEMO_FARM[1],'crop':None}):assert service.respond('Check planting suitability',log=False)['next_step_reason'] in ['crop','clarify']
 def test_missing_cell_response(service):
  with patch.object(service.store,'evidence',return_value={'soil':[],'weather':{},'forecasts':[]}):assert service.respond('Can I grow maize here?',log=False)['next_step_reason']=='soil_missing'
 
@@ -95,6 +95,11 @@ def test_zero_filled_ph_rejected():
  assert not a['soil_findings']
  assert 'valid_soil_units_or_values_0-5cm' in a['missing_information']
 def test_demo_farm_shows_soil_evidence(service):
- r=service.respond('Can I grow maize here?',log=False);assert r['soil_findings'];assert r['next_step_reason']=='ph';assert 'pH' in r['message']
+ r=service.respond('Can I grow maize here?',log=False);assert r['soil_findings'];assert r['next_step_reason'].startswith('verdict_');assert 'FAO' in r['message'] and 'pH' in r['message']
 @pytest.mark.parametrize('text',['Can I grow peanuts here?','کیا میں یہاں مونگ پھلی اگا سکتا ہوں؟'])
 def test_other_crops_get_maize_only_reply(service,text):assert service.respond(text,log=False)['next_step_reason']=='unsupported'
+@pytest.mark.parametrize('ph,label',[(6.,'feasible'),(8.,'possible'),(9.,'not_recommended')])
+def test_verdict_tiers(service,ph,label):
+ e={'soil':[dict(property='phh2o',depth=d,statistic=s,value=v,unit='pH') for d in DEPTHS for s,v in [('mean',ph),('Q0.05',ph-.5),('Q0.95',ph+.5)]],'weather':{},'forecasts':[]}
+ with patch.object(service.store,'evidence',return_value=e):r=service.respond('Can I grow maize here?',log=False)
+ assert r['next_step_reason']=='verdict_'+label;assert r['verdict']['label']==label;assert r['agronomic_confidence'] is None

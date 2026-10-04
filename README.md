@@ -57,14 +57,14 @@ The ordinary `make offline` command denies Python socket connections and DNS. Th
 - 72 actual SoilGrids layers: eight properties, three depths, mean and 5th/95th quantiles.
 - 1,096 daily NASA POWER records for 2023–2025, explicitly historical reanalysis.
 - An ECMWF forecast extract with actual issue and validity times. Expired or malformed forecasts are rejected.
-- Source-linked rules, evidence records, no overall planting-success score, and responses that change with missing data or field observations.
+- Source-linked rules, evidence records, a rule-based verdict (feasible / possible / not recommended) from the FAO EcoCrop maize pH ranges with no numeric planting-success score, and responses that change with missing data or field observations.
 - Simulated human referral, including a delivery-failure path. It never claims to have contacted an officer.
 
 ## Boundaries
 
-This is **not validated agricultural advice**. Templates and Urdu translations were authored and source-checked by AI; qualified agronomic and native-language review are still pending. No human review is claimed. Urdu demonstrates multilingual handling and is not the pilot area's primary language. Swahili is configured as disabled.
+This is **not validated agricultural advice**. Templates and Urdu translations were authored and source-checked by AI; qualified agronomic and native-language review are still pending. No human review is claimed. Urdu is Pakistan's national language; Punjabi, which many farmers in the demonstration area speak, is not yet supported. Swahili is configured as disabled.
 
-The provisional area is a roughly 2.2 km square near Kitale, Kenya: **west 34.99°, south 1.01°, east 35.01°, north 1.03°**. It was selected after confirming SoilGrids and NASA POWER availability. The registered farm at 1.0207° N, 34.9980° E is a fictional demonstration registration (moved about 250 m from 1.02° N, 35.00° E, whose soil cell is excluded as suspect zero-fill), not a real farmer record. Soil and weather values are real downloaded products, not fabricated field measurements.
+The provisional area is a roughly 2 km square of farmland near Sahiwal, Punjab, Pakistan: **west 73.04°, south 30.59°, east 73.06°, north 30.61°** (set in `farmsignal/config.py`). An earlier build used a square near Kitale, Kenya. The registered farm at 30.60° N, 73.05° E is a fictional demonstration registration, not a real farmer record. Soil and weather values are real downloaded products, not fabricated field measurements.
 
 SMS delivery, cellular modem integration, voice, disease diagnosis, fertilizer and pesticide prescriptions are excluded. The modem interface is defined in `farmsignal/adapters.py`. The API is intended for localhost only; production authentication, consent and operations are not implemented.
 
@@ -94,7 +94,7 @@ Measured on macOS ARM64 on 2026-10-04. These results do not establish farmer-fac
 | Raw classifier | 0.597 | 0.889 |
 | Classifier with abstention | 0.306 | 0.686 |
 
-The English classifier underperforms the baseline. The 140 examples are AI-authored and the test set shares the same author. The model is about 68 KiB. The recorded suite has 40 passing tests; localhost HTTP latency was approximately 15 ms median and 43 ms p95 over 30 sequential calls on the measured machine. See full reports for methods and limitations. No CI status or Linux test result is claimed.
+The English classifier underperforms the baseline. The 140 examples are AI-authored and the test set shares the same author. The model is about 68 KiB. The recorded suite has 43 passing tests; localhost HTTP latency was approximately 15 ms median and 43 ms p95 over 30 sequential calls on the measured machine. See full reports for methods and limitations. No CI status or Linux test result is claimed.
 
 ## Repository map
 

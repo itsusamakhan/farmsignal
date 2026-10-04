@@ -1,28 +1,28 @@
 {
-  "issue_time": "2026-10-03T12:00:00+00:00",
-  "valid_from": "2026-10-03T12:00:00+00:00",
-  "valid_until": "2026-10-04T12:00:00+00:00",
-  "downloaded_at": "2026-10-04T01:55:36.434671+00:00",
-  "source": "ECMWF IFS 0.25 degree; ecmwf-2026100312-2t.grib2, ecmwf-2026100312-tp.grib2",
-  "temperature_c": 29.250299072265648,
-  "rain_mm": 0.00762939453125,
+  "issue_time": "2026-10-04T00:00:00+00:00",
+  "valid_from": "2026-10-04T00:00:00+00:00",
+  "valid_until": "2026-10-05T00:00:00+00:00",
+  "downloaded_at": "2026-10-04T11:03:01.241274+00:00",
+  "source": "ECMWF IFS 0.25 degree; ecmwf-2026100400-2t.grib2, ecmwf-2026100400-tp.grib2",
+  "temperature_c": 24.14753112792971,
+  "rain_mm": 0.0,
   "unit": "mm/24h",
   "gridpoint": {
     "2t": {
-      "value": 302.4002990722656,
+      "value": 297.2975311279297,
       "units": "K",
-      "lat": 1.0,
-      "lon": 35.0,
-      "distance_km": 2.223978469528515
+      "lat": 30.5,
+      "lon": 73.0,
+      "distance_km": 12.106954559076117
     },
     "tp": {
-      "value": 7.62939453125e-06,
+      "value": 0.0,
       "units": "m",
-      "lat": 1.0,
-      "lon": 35.0,
-      "distance_km": 2.223978469528515
+      "lat": 30.5,
+      "lon": 73.0,
+      "distance_km": 12.106954559076117
     }
   },
-  "temperature_valid_time": "2026-10-04T12:00:00+00:00",
+  "temperature_valid_time": "2026-10-05T00:00:00+00:00",
   "precipitation_period": "Accumulation from issue to +24h, not the next 24h from query time"
 }

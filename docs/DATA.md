@@ -1,6 +1,6 @@
 # Data decisions and quality
 
-Sources checked and data retrieved on 2026-10-04. Exact times and checksums are in `data/manifest.json`. The small pilot box near Kitale is provisional, chosen after successful soil and weather acquisition. No field measurements, yield labels, or real farmer registration records are claimed.
+Sources checked and data retrieved on 2026-10-04. Exact times and checksums are in `data/manifest.json`. The small pilot box near Sahiwal, Punjab, Pakistan (an earlier build used Kitale, Kenya) is provisional, chosen after successful soil and weather acquisition. No field measurements, yield labels, or real farmer registration records are claimed.
 
 ## SoilGrids
 
@@ -25,7 +25,7 @@ The WCS worked; the beta REST API was unnecessary. Native CRS metadata is docume
 
 [NASA POWER daily API](https://power.larc.nasa.gov/docs/services/api/temporal/daily/), [source/latency information](https://power.larc.nasa.gov/docs/faqs/data/), [resolution/revision guidance](https://power.larc.nasa.gov/docs/tutorials/service-data-request/api/).
 
-One representative point, 1.02° N / 35° E, supplies 2023–2025 daily T2M and PRECTOTCORR in UTC. This is model/assimilation-derived historical context, not a station at the farm and not a forecast. Meteorological resolution is approximately 0.5° × 0.625°; the pilot area is much smaller. API units are checked as °C and mm/day. Dates and missing -999 values are preserved. NASA documents about 2–3 days of latency and later meteorological revisions. The fixed historical period avoids representing low-latency data as today's weather. Three years are insufficient for a climatological normal. Acknowledge the NASA POWER Project; NASA's public data are openly available, not relabelled as CC BY.
+The demonstration farm point (`DEMO_FARM` in `farmsignal/config.py`) supplies 2023–2025 daily T2M and PRECTOTCORR in UTC. This is model/assimilation-derived historical context, not a station at the farm and not a forecast. Meteorological resolution is approximately 0.5° × 0.625°; the pilot area is much smaller. API units are checked as °C and mm/day. Dates and missing -999 values are preserved. NASA documents about 2–3 days of latency and later meteorological revisions. The fixed historical period avoids representing low-latency data as today's weather. Three years are insufficient for a climatological normal. Acknowledge the NASA POWER Project; NASA's public data are openly available, not relabelled as CC BY.
 
 [CHIRPS v3](https://www.chc.ucsb.edu/data/chirps3) was considered but not needed in the minimum combination: 0.05° satellite/station rainfall, with delayed preliminary/final releases. Its daily series disaggregates pentad totals; it cannot supply a current forecast. No CHIRPS data were downloaded or used.
 
@@ -37,7 +37,7 @@ Kelvin is converted to °C and metres to millimetres after checking the GRIB uni
 
 ## Agronomic evidence
 
-[FAO ECOCROP Zea mays](https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175) supports a global optimal pH reference of 5–7. This is a screening reference, not a field suitability verdict. [KALRO maize guidance](https://keep.kalro.org/good-agricultural-practices/Maize) supports checking drainage. [KALRO land preparation](https://www.kalro.org/maize/maize-land-preparation/) supports checking soil moisture before sowing. Kenyan guidance may use narrower optimal pH ranges depending on context; the global rule is explicitly provisional. No fertilizer, lime, pesticide, cultivar, or crop-success prescription is implemented. Local expert review remains pending.
+[FAO ECOCROP Zea mays](https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175) supports a global optimal pH reference of 5–7 and an absolute range of 4.5–8.5. The app uses these for a rule-based verdict on the mapped mean (feasible / possible / not recommended); it is a screening reference, not a field measurement or validated local recommendation. [KALRO maize guidance](https://keep.kalro.org/good-agricultural-practices/Maize) supports checking drainage. [KALRO land preparation](https://www.kalro.org/maize/maize-land-preparation/) supports checking soil moisture before sowing. Kenyan guidance may use narrower optimal pH ranges depending on context; the global rule is explicitly provisional. No fertilizer, lime, pesticide, cultivar, or crop-success prescription is implemented. Local expert review remains pending.
 
 ## Language/model data
 

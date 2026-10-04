@@ -9,7 +9,7 @@ from .adapters import Simulator
 class Service:
  def __init__(self,store=None):self.model=IntentModel();self.store=store or Store();self.adapter=Simulator()
  def respond(self,text,farm_id='demo',crop=None,standing_water=None,dry_soil=None,referral_fail=False,log=True):
-  start=time.perf_counter(); prediction=self.model.predict(text);lang=prediction['language'];t=normalize(text);farm=self.store.farm(farm_id)
+  start=time.perf_counter();values={}; prediction=self.model.predict(text);lang=prediction['language'];t=normalize(text);farm=self.store.farm(farm_id)
   # Explicit structured fields take precedence. No guessed coordinates from messages.
   unsupported=['wheat','rice','cocoa','cotton','tomato','tomatoes','peanut','peanuts','groundnut','groundnuts','beans','coffee','potato','potatoes','sorghum','cassava','گندم','چاول','کپاس','ٹماٹر','مونگ پھلی','آلو']
   explicit_bad=next((x for x in unsupported if re.search(r'(?<!\w)'+re.escape(x)+r'(?!\w)',t)),None)
@@ -42,14 +42,13 @@ class Service:
     elif 'reported_standing_water' in limits:key='drainage'
     elif 'reported_dry_soil' in limits:key='dry'
     elif any(s.startswith(('soil_pH_','valid_soil_')) for s in missing):key='soil_missing'
-    elif limits:key='ph'
-    elif standing_water is None:key='drainage_question'
-    elif a['forecast_status']!='fresh':key='weather'
-    else:key='moisture'
-  r.update(message=render(key,lang),next_step_reason=key,response_time_ms=round((time.perf_counter()-start)*1000,3),created_at=datetime.now(timezone.utc).isoformat())
-  if key=='ph' and r.get('soil_findings'):
-   s=r['soil_findings'];rule=r['rules'][0]
-   r['message']=render('ph_values',lang,mean=f"{s[0]['mean']:.1f}",lower=f"{min(x['lower'] for x in s):.1f}",upper=f"{max(x['upper'] for x in s):.1f}",lo=f"{rule['optimal_min']:.1f}",hi=f"{rule['optimal_max']:.1f}")
+    else:
+     # Rule-based verdict on the mapped 0-30 cm mean against FAO EcoCrop (no numeric success score).
+     s=a['soil_findings'];rule=a['rules'][0];ph=sum(x['mean'] for x in s)/len(s)
+     tier='feasible' if rule['optimal_min']<=ph<=rule['optimal_max'] else 'possible' if rule['absolute_min']<=ph<=rule['absolute_max'] else 'not_recommended'
+     key='verdict_'+tier;values=dict(ph=f'{ph:.1f}',lo=f"{rule['optimal_min']:g}",hi=f"{rule['optimal_max']:g}",amin=f"{rule['absolute_min']:g}",amax=f"{rule['absolute_max']:g}")
+     r['verdict']=dict(label=tier,mapped_pH_0_30cm=round(ph,1),mapped_range=[round(min(x['lower'] for x in s),1),round(max(x['upper'] for x in s),1)],reference=f"FAO EcoCrop Zea mays: optimal pH {values['lo']}-{values['hi']}, absolute {values['amin']}-{values['amax']}",reference_url=rule['source'],basis='SoilGrids mapped estimate, not a field measurement')
+  r.update(message=render(key,lang,**values),next_step_reason=key,response_time_ms=round((time.perf_counter()-start)*1000,3),created_at=datetime.now(timezone.utc).isoformat())
   if key=='forecast':
    f=r['forecast_used'];end=f['valid_until'][:16].replace('T',' ');rain='under 1' if f['rain_mm']<1 else f"{f['rain_mm']:.0f}";temp=f"{f['temperature_c']:.0f}"
    r['message']=(f"محفوظ پیش گوئی ({end} UTC تک): تقریباً {rain.replace('under 1','1 سے کم')} ملی میٹر بارش، درجہ حرارت تقریباً {temp}°C۔ بوائی سے پہلے کھیت کی نمی دیکھیں۔" if lang=='ur' else f"Saved forecast to {end} UTC: {rain} mm rain, about {temp}°C. Check moisture in your field before sowing.")

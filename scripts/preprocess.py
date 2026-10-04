@@ -27,7 +27,7 @@ def main():
  report={'bbox_wsen':BBOX,'suspect_joint_zero_cells_per_layer':int(suspect.sum()) if suspect is not None else None,'soil':{},'weather':{},'limitations':['Mapped soils are not field measurements.','Three historical years are context, not climate normals or a current forecast.','No local agronomist or native Urdu review has been performed.']}
  with sqlite3.connect(tmp) as c:
   c.executescript(SCHEMA)
-  c.executemany('INSERT INTO farms VALUES (?,?,?,?,?)',[('demo','Kitale demonstration farm',1.0207,34.998,'maize'),('unregistered','No farm registered',None,None,None),('outside','Outside downloaded region',-1.28,36.8,'maize')])
+  c.executemany('INSERT INTO farms VALUES (?,?,?,?,?)',[('demo','Sahiwal demonstration farm',*DEMO_FARM,'maize'),('unregistered','No farm registered',None,None,None),('outside','Outside downloaded region',*OUTSIDE_FARM,'maize')])
   for filename,entry in man.items():
    p=ROOT/'data/raw'/filename
    if entry['status']!='downloaded' or not p.exists(): continue

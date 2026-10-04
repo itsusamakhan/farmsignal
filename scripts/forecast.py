@@ -5,7 +5,7 @@ from datetime import datetime,timedelta,timezone
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import requests
 from eccodes import codes_grib_new_from_file,codes_grib_find_nearest,codes_release,codes_get
-from farmsignal.config import ROOT
+from farmsignal.config import ROOT,DEMO_FARM
 from scripts.acquire import fetch,RAW,MAN,entries
 
 def main():
@@ -32,7 +32,7 @@ def main():
    p.write_bytes(r.content)
   entries[name]=dict(url=url,license='CC-BY-4.0; ECMWF',kind='forecast',status='downloaded',retrieved_at=now.isoformat(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),bytes=p.stat().st_size,byte_range=[start,start+length-1],issue_time=issue.isoformat(),version='IFS open data 0p25',note='One GRIB message is a global grid; only the pilot point is used.')
   with p.open('rb') as f:
-   gid=codes_grib_new_from_file(f);v=codes_grib_find_nearest(gid,1.02,35.0)[0];unit=codes_get(gid,'units');values[param]={'value':v['value'],'units':unit,'lat':v['lat'],'lon':v['lon'],'distance_km':v['distance']};codes_release(gid)
+   gid=codes_grib_new_from_file(f);v=codes_grib_find_nearest(gid,*DEMO_FARM)[0];unit=codes_get(gid,'units');values[param]={'value':v['value'],'units':unit,'lat':v['lat'],'lon':v['lon'],'distance_km':v['distance']};codes_release(gid)
   sources.append(name)
  assert values['2t']['units']=='K' and values['tp']['units']=='m',values
  record=dict(issue_time=issue.isoformat(),valid_from=issue.isoformat(),valid_until=(issue+timedelta(hours=24)).isoformat(),downloaded_at=now.isoformat(),source='ECMWF IFS 0.25 degree; '+', '.join(sources),temperature_c=values['2t']['value']-273.15,rain_mm=values['tp']['value']*1000,unit='mm/24h',gridpoint=values,temperature_valid_time=(issue+timedelta(hours=24)).isoformat(),precipitation_period='Accumulation from issue to +24h, not the next 24h from query time')

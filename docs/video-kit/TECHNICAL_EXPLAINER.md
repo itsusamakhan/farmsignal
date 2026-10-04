@@ -29,6 +29,6 @@ Real SMS delivery and expert-reviewed field validation are the next steps.
 
 - The fifth model class is unknown; the narration describes it as unclear requests.
 - This is an intent classifier, not a crop-success predictor or a fine-tuned LLM.
-- Urdu demonstrates multilingual handling; it is not claimed as the Kenyan pilot's primary language.
+- Urdu is Pakistan's national language; Punjabi, widely spoken by farmers in the area, is not yet supported.
 - “Verified offline” refers to reports/os-offline.txt, not a claim that a network-status icon proves isolation.
 - Use the recorded evaluation figures without rounding them into an “accuracy percentage.”

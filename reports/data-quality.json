@@ -1,15 +1,15 @@
 {
   "bbox_wsen": [
-    34.99,
-    1.01,
-    35.01,
-    1.03
+    73.04,
+    30.59,
+    73.06,
+    30.61
   ],
-  "suspect_joint_zero_cells_per_layer": 26,
+  "suspect_joint_zero_cells_per_layer": 0,
   "soil": {
     "phh2o_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -18,13 +18,13 @@
       "unit": "pH",
       "depth": "0-5cm",
       "range": [
-        5.8,
-        6.3
+        7.7,
+        7.9
       ]
     },
     "phh2o_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -33,13 +33,13 @@
       "unit": "pH",
       "depth": "0-5cm",
       "range": [
-        4.2,
-        5.2
+        5.9,
+        5.9
       ]
     },
     "phh2o_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -48,13 +48,13 @@
       "unit": "pH",
       "depth": "0-5cm",
       "range": [
-        7.4,
-        8.2
+        8.7,
+        9.0
       ]
     },
     "phh2o_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -63,13 +63,13 @@
       "unit": "pH",
       "depth": "5-15cm",
       "range": [
-        5.8,
-        6.3
+        7.7,
+        7.9
       ]
     },
     "phh2o_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -78,13 +78,13 @@
       "unit": "pH",
       "depth": "5-15cm",
       "range": [
-        4.2,
-        5.2
+        5.9,
+        5.9
       ]
     },
     "phh2o_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -93,13 +93,13 @@
       "unit": "pH",
       "depth": "5-15cm",
       "range": [
-        7.5,
-        8.2
+        8.7,
+        9.0
       ]
     },
     "phh2o_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -108,13 +108,13 @@
       "unit": "pH",
       "depth": "15-30cm",
       "range": [
-        5.8,
-        6.3
+        7.7,
+        7.8
       ]
     },
     "phh2o_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -123,13 +123,13 @@
       "unit": "pH",
       "depth": "15-30cm",
       "range": [
-        4.2,
-        5.2
+        5.9,
+        5.9
       ]
     },
     "phh2o_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -138,13 +138,13 @@
       "unit": "pH",
       "depth": "15-30cm",
       "range": [
-        7.4,
-        8.2
+        8.7,
+        9.2
       ]
     },
     "sand_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -153,13 +153,13 @@
       "unit": "%",
       "depth": "0-5cm",
       "range": [
-        19.1,
-        27.9
+        41.2,
+        43.9
       ]
     },
     "sand_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -168,13 +168,13 @@
       "unit": "%",
       "depth": "0-5cm",
       "range": [
-        1.3,
-        1.5
+        5.4,
+        6.9
       ]
     },
     "sand_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -183,13 +183,13 @@
       "unit": "%",
       "depth": "0-5cm",
       "range": [
-        51.5,
-        63.0
+        77.4,
+        81.3
       ]
     },
     "sand_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -198,13 +198,13 @@
       "unit": "%",
       "depth": "5-15cm",
       "range": [
-        20.8,
-        27.0
+        42.4,
+        45.3
       ]
     },
     "sand_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -213,13 +213,13 @@
       "unit": "%",
       "depth": "5-15cm",
       "range": [
-        1.5,
-        1.8
+        5.4,
+        6.9
       ]
     },
     "sand_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -228,13 +228,13 @@
       "unit": "%",
       "depth": "5-15cm",
       "range": [
-        52.1,
-        64.0
+        77.5,
+        81.6
       ]
     },
     "sand_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -243,13 +243,13 @@
       "unit": "%",
       "depth": "15-30cm",
       "range": [
-        19.5,
-        27.0
+        40.4,
+        42.5
       ]
     },
     "sand_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -258,13 +258,13 @@
       "unit": "%",
       "depth": "15-30cm",
       "range": [
-        1.5,
-        2.6
+        4.3,
+        4.8
       ]
     },
     "sand_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -273,13 +273,13 @@
       "unit": "%",
       "depth": "15-30cm",
       "range": [
-        52.1,
-        60.4
+        77.5,
+        82.3
       ]
     },
     "silt_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -288,328 +288,313 @@
       "unit": "%",
       "depth": "0-5cm",
       "range": [
-        27.7,
-        36.0
-      ]
-    },
-    "silt_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "0-5cm",
-      "range": [
-        0.5,
-        1.2
-      ]
-    },
-    "silt_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "0-5cm",
-      "range": [
-        87.8,
-        93.1
-      ]
-    },
-    "silt_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        25.9,
-        35.9
-      ]
-    },
-    "silt_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        0.6,
-        1.3
-      ]
-    },
-    "silt_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        86.0,
-        92.5
-      ]
-    },
-    "silt_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        24.6,
-        33.9
-      ]
-    },
-    "silt_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        0.6,
-        1.5
-      ]
-    },
-    "silt_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        81.2,
-        88.9
-      ]
-    },
-    "clay_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "0-5cm",
-      "range": [
-        41.6,
-        50.3
-      ]
-    },
-    "clay_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "0-5cm",
-      "range": [
-        3.1,
-        5.6
-      ]
-    },
-    "clay_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "0-5cm",
-      "range": [
-        96.3,
-        97.9
-      ]
-    },
-    "clay_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        42.3,
-        47.6
-      ]
-    },
-    "clay_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        2.9,
-        6.0
-      ]
-    },
-    "clay_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "5-15cm",
-      "range": [
-        94.7,
-        97.4
-      ]
-    },
-    "clay_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        44.5,
-        50.8
-      ]
-    },
-    "clay_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        3.8,
-        7.2
-      ]
-    },
-    "clay_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "%",
-      "depth": "15-30cm",
-      "range": [
-        92.6,
-        97.2
-      ]
-    },
-    "soc_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "g/kg",
-      "depth": "0-5cm",
-      "range": [
-        30.8,
-        64.3
-      ]
-    },
-    "soc_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "g/kg",
-      "depth": "0-5cm",
-      "range": [
-        3.6,
-        8.2
-      ]
-    },
-    "soc_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "g/kg",
-      "depth": "0-5cm",
-      "range": [
-        74.7,
-        288.1
-      ]
-    },
-    "soc_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
-      "resolution": [
-        250.0,
-        250.0
-      ],
-      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
-      "unit": "g/kg",
-      "depth": "5-15cm",
-      "range": [
-        20.6,
+        33.8,
         36.4
       ]
     },
-    "soc_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+    "silt_0-5cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "0-5cm",
+      "range": [
+        1.5,
+        2.3
+      ]
+    },
+    "silt_0-5cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "0-5cm",
+      "range": [
+        89.0,
+        91.4
+      ]
+    },
+    "silt_5-15cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        33.6,
+        36.2
+      ]
+    },
+    "silt_5-15cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        1.8,
+        2.6
+      ]
+    },
+    "silt_5-15cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        88.4,
+        91.4
+      ]
+    },
+    "silt_15-30cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        34.6,
+        37.0
+      ]
+    },
+    "silt_15-30cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        1.6,
+        2.5
+      ]
+    },
+    "silt_15-30cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        91.4,
+        93.9
+      ]
+    },
+    "clay_0-5cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "0-5cm",
+      "range": [
+        21.9,
+        23.5
+      ]
+    },
+    "clay_0-5cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "0-5cm",
+      "range": [
+        0.9,
+        1.5
+      ]
+    },
+    "clay_0-5cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "0-5cm",
+      "range": [
+        62.8,
+        71.7
+      ]
+    },
+    "clay_5-15cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        20.7,
+        22.7
+      ]
+    },
+    "clay_5-15cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        1.0,
+        1.7
+      ]
+    },
+    "clay_5-15cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "5-15cm",
+      "range": [
+        56.1,
+        62.5
+      ]
+    },
+    "clay_15-30cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        21.7,
+        23.9
+      ]
+    },
+    "clay_15-30cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        0.9,
+        1.5
+      ]
+    },
+    "clay_15-30cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "%",
+      "depth": "15-30cm",
+      "range": [
+        71.1,
+        78.0
+      ]
+    },
+    "soc_0-5cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "g/kg",
+      "depth": "0-5cm",
+      "range": [
+        9.2,
+        10.8
+      ]
+    },
+    "soc_0-5cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "g/kg",
+      "depth": "0-5cm",
+      "range": [
+        0.8,
+        1.6
+      ]
+    },
+    "soc_0-5cm_Q0.95.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "g/kg",
+      "depth": "0-5cm",
+      "range": [
+        26.5,
+        39.0
+      ]
+    },
+    "soc_5-15cm_mean.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -618,13 +603,28 @@
       "unit": "g/kg",
       "depth": "5-15cm",
       "range": [
-        3.0,
-        7.6
+        7.7,
+        9.3
+      ]
+    },
+    "soc_5-15cm_Q0.05.tif": {
+      "valid_cells": 108,
+      "missing_cells": 0,
+      "resolution": [
+        250.0,
+        250.0
+      ],
+      "crs": "+proj=igh +datum=WGS84 +units=m +no_defs",
+      "unit": "g/kg",
+      "depth": "5-15cm",
+      "range": [
+        0.7,
+        1.1
       ]
     },
     "soc_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -633,13 +633,13 @@
       "unit": "g/kg",
       "depth": "5-15cm",
       "range": [
-        47.9,
-        111.8
+        18.0,
+        27.4
       ]
     },
     "soc_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -648,13 +648,13 @@
       "unit": "g/kg",
       "depth": "15-30cm",
       "range": [
-        15.7,
-        23.3
+        4.2,
+        5.7
       ]
     },
     "soc_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -663,13 +663,13 @@
       "unit": "g/kg",
       "depth": "15-30cm",
       "range": [
-        2.0,
-        3.4
+        0.4,
+        1.0
       ]
     },
     "soc_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -678,13 +678,13 @@
       "unit": "g/kg",
       "depth": "15-30cm",
       "range": [
-        32.3,
-        57.2
+        11.0,
+        15.0
       ]
     },
     "cec_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -693,13 +693,13 @@
       "unit": "cmol(c)/kg",
       "depth": "0-5cm",
       "range": [
-        27.5,
-        32.0
+        14.6,
+        16.3
       ]
     },
     "cec_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -708,13 +708,13 @@
       "unit": "cmol(c)/kg",
       "depth": "0-5cm",
       "range": [
-        4.7,
-        9.4
+        3.0,
+        3.6
       ]
     },
     "cec_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -723,13 +723,13 @@
       "unit": "cmol(c)/kg",
       "depth": "0-5cm",
       "range": [
-        57.6,
-        63.8
+        42.8,
+        53.6
       ]
     },
     "cec_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -738,13 +738,13 @@
       "unit": "cmol(c)/kg",
       "depth": "5-15cm",
       "range": [
-        27.2,
-        32.6
+        12.4,
+        14.2
       ]
     },
     "cec_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -753,13 +753,13 @@
       "unit": "cmol(c)/kg",
       "depth": "5-15cm",
       "range": [
-        3.4,
-        7.2
+        2.0,
+        3.1
       ]
     },
     "cec_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -768,13 +768,13 @@
       "unit": "cmol(c)/kg",
       "depth": "5-15cm",
       "range": [
-        52.3,
-        63.8
+        38.5,
+        44.4
       ]
     },
     "cec_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -783,13 +783,13 @@
       "unit": "cmol(c)/kg",
       "depth": "15-30cm",
       "range": [
-        27.6,
-        32.3
+        12.4,
+        14.1
       ]
     },
     "cec_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -798,13 +798,13 @@
       "unit": "cmol(c)/kg",
       "depth": "15-30cm",
       "range": [
-        3.4,
-        7.2
+        2.0,
+        3.0
       ]
     },
     "cec_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -813,13 +813,13 @@
       "unit": "cmol(c)/kg",
       "depth": "15-30cm",
       "range": [
-        55.0,
-        63.8
+        36.7,
+        44.4
       ]
     },
     "cfvo_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -828,13 +828,13 @@
       "unit": "vol%",
       "depth": "0-5cm",
       "range": [
-        9.9,
-        18.8
+        2.8,
+        4.6
       ]
     },
     "cfvo_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -848,8 +848,8 @@
       ]
     },
     "cfvo_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -858,13 +858,13 @@
       "unit": "vol%",
       "depth": "0-5cm",
       "range": [
-        60.0,
-        85.2
+        14.0,
+        28.1
       ]
     },
     "cfvo_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -873,13 +873,13 @@
       "unit": "vol%",
       "depth": "5-15cm",
       "range": [
-        10.4,
-        19.9
+        3.0,
+        4.7
       ]
     },
     "cfvo_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -893,8 +893,8 @@
       ]
     },
     "cfvo_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -903,13 +903,13 @@
       "unit": "vol%",
       "depth": "5-15cm",
       "range": [
-        60.0,
-        85.2
+        15.0,
+        28.1
       ]
     },
     "cfvo_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -918,13 +918,13 @@
       "unit": "vol%",
       "depth": "15-30cm",
       "range": [
-        12.1,
-        22.8
+        3.3,
+        5.1
       ]
     },
     "cfvo_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -938,8 +938,8 @@
       ]
     },
     "cfvo_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -948,13 +948,13 @@
       "unit": "vol%",
       "depth": "15-30cm",
       "range": [
-        65.3,
-        90.0
+        15.1,
+        40.0
       ]
     },
     "bdod_0-5cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -963,13 +963,13 @@
       "unit": "kg/dm3",
       "depth": "0-5cm",
       "range": [
-        1.16,
-        1.22
+        1.46,
+        1.52
       ]
     },
     "bdod_0-5cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -978,13 +978,13 @@
       "unit": "kg/dm3",
       "depth": "0-5cm",
       "range": [
-        0.54,
-        0.92
+        1.0,
+        1.16
       ]
     },
     "bdod_0-5cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -993,13 +993,13 @@
       "unit": "kg/dm3",
       "depth": "0-5cm",
       "range": [
-        1.49,
-        1.65
+        1.73,
+        1.83
       ]
     },
     "bdod_5-15cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1008,13 +1008,13 @@
       "unit": "kg/dm3",
       "depth": "5-15cm",
       "range": [
-        1.19,
-        1.25
+        1.49,
+        1.54
       ]
     },
     "bdod_5-15cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1023,13 +1023,13 @@
       "unit": "kg/dm3",
       "depth": "5-15cm",
       "range": [
-        0.7,
-        0.91
+        1.03,
+        1.16
       ]
     },
     "bdod_5-15cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1038,13 +1038,13 @@
       "unit": "kg/dm3",
       "depth": "5-15cm",
       "range": [
-        1.51,
-        1.69
+        1.8,
+        1.83
       ]
     },
     "bdod_15-30cm_mean.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1053,13 +1053,13 @@
       "unit": "kg/dm3",
       "depth": "15-30cm",
       "range": [
-        1.2,
-        1.26
+        1.51,
+        1.54
       ]
     },
     "bdod_15-30cm_Q0.05.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1068,13 +1068,13 @@
       "unit": "kg/dm3",
       "depth": "15-30cm",
       "range": [
-        0.75,
-        0.92
+        1.06,
+        1.16
       ]
     },
     "bdod_15-30cm_Q0.95.tif": {
-      "valid_cells": 74,
-      "missing_cells": 26,
+      "valid_cells": 108,
+      "missing_cells": 0,
       "resolution": [
         250.0,
         250.0
@@ -1083,8 +1083,8 @@
       "unit": "kg/dm3",
       "depth": "15-30cm",
       "range": [
-        1.53,
-        1.7
+        1.77,
+        1.83
       ]
     }
   },
@@ -1110,9 +1110,9 @@
       "end": "20251231"
     },
     "coordinates": [
-      35.0,
-      1.02,
-      2097.62
+      73.05,
+      30.6,
+      162.38
     ]
   },
   "limitations": [
