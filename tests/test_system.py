@@ -94,3 +94,7 @@ def test_zero_filled_ph_rejected():
  a=assess(e,{})
  assert not a['soil_findings']
  assert 'valid_soil_units_or_values_0-5cm' in a['missing_information']
+def test_demo_farm_shows_soil_evidence(service):
+ r=service.respond('Can I grow maize here?',log=False);assert r['soil_findings'];assert r['next_step_reason']=='ph';assert 'pH' in r['message']
+@pytest.mark.parametrize('text',['Can I grow peanuts here?','کیا میں یہاں مونگ پھلی اگا سکتا ہوں؟'])
+def test_other_crops_get_maize_only_reply(service,text):assert service.respond(text,log=False)['next_step_reason']=='unsupported'

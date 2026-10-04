@@ -11,7 +11,7 @@ class Service:
  def respond(self,text,farm_id='demo',crop=None,standing_water=None,dry_soil=None,referral_fail=False,log=True):
   start=time.perf_counter(); prediction=self.model.predict(text);lang=prediction['language'];t=normalize(text);farm=self.store.farm(farm_id)
   # Explicit structured fields take precedence. No guessed coordinates from messages.
-  unsupported=['wheat','rice','cocoa','cotton','tomato','گندم','چاول','کپاس','ٹماٹر']
+  unsupported=['wheat','rice','cocoa','cotton','tomato','tomatoes','peanut','peanuts','groundnut','groundnuts','beans','coffee','potato','potatoes','sorghum','cassava','گندم','چاول','کپاس','ٹماٹر','مونگ پھلی','آلو']
   explicit_bad=next((x for x in unsupported if re.search(r'(?<!\w)'+re.escape(x)+r'(?!\w)',t)),None)
   used_crop=crop.lower() if crop else explicit_bad or ('maize' if any(x in t for x in ['maize','corn','مکئی']) else (farm or {}).get('crop'))
   if standing_water is None:
@@ -47,9 +47,12 @@ class Service:
     elif a['forecast_status']!='fresh':key='weather'
     else:key='moisture'
   r.update(message=render(key,lang),next_step_reason=key,response_time_ms=round((time.perf_counter()-start)*1000,3),created_at=datetime.now(timezone.utc).isoformat())
+  if key=='ph' and r.get('soil_findings'):
+   s=r['soil_findings'];rule=r['rules'][0]
+   r['message']=render('ph_values',lang,mean=f"{s[0]['mean']:.1f}",lower=f"{min(x['lower'] for x in s):.1f}",upper=f"{max(x['upper'] for x in s):.1f}",lo=f"{rule['optimal_min']:.1f}",hi=f"{rule['optimal_max']:.1f}")
   if key=='forecast':
-   f=r['forecast_used'];end=f['valid_until'][:16].replace('T',' ')
-   r['message']=(f"محفوظ پیش گوئی {end} UTC تک ہے۔ بوائی سے پہلے کھیت کی نمی دیکھیں۔" if lang=='ur' else f"The saved forecast ends {end} UTC. Check moisture in your field before sowing.")
+   f=r['forecast_used'];end=f['valid_until'][:16].replace('T',' ');rain='under 1' if f['rain_mm']<1 else f"{f['rain_mm']:.0f}";temp=f"{f['temperature_c']:.0f}"
+   r['message']=(f"محفوظ پیش گوئی ({end} UTC تک): تقریباً {rain.replace('under 1','1 سے کم')} ملی میٹر بارش، درجہ حرارت تقریباً {temp}°C۔ بوائی سے پہلے کھیت کی نمی دیکھیں۔" if lang=='ur' else f"Saved forecast to {end} UTC: {rain} mm rain, about {temp}°C. Check moisture in your field before sowing.")
   if key=='forecast' and any(word in t for word in ['tomorrow','کل']):
    # Day-level query: require coverage through the requested day's end in UTC.
    tomorrow_end=(datetime.now(timezone.utc)+timedelta(days=2)).replace(hour=0,minute=0,second=0,microsecond=0)

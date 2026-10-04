@@ -12,9 +12,12 @@ T={
 'drainage':('You reported standing water. Ask a local adviser to check drainage before planting maize.','آپ نے کھڑے پانی کی اطلاع دی ہے۔ مکئی لگانے سے پہلے مقامی مشیر سے پانی کی نکاسی جانچنے کو کہیں۔'),
 'dry':('You reported dry soil. Check moisture below the surface before sowing maize.','آپ نے خشک مٹی کی اطلاع دی ہے۔ مکئی بونے سے پہلے سطح کے نیچے نمی دیکھیں۔'),
 'ph':('The mapped soil range needs checking in your field. Have the soil tested before deciding on maize.','مٹی کے نقشے کے اندازے کی کھیت میں جانچ ضروری ہے۔ مکئی کا فیصلہ کرنے سے پہلے مٹی کا ٹیسٹ کروائیں۔'),
+'ph_values':('Soil map: pH about {mean}, but it could be {lower}-{upper}. Maize usually needs about {lo}-{hi}. Test your soil before buying anything.','مٹی کا نقشہ: pH تقریباً {mean}، مگر {lower} سے {upper} تک ہو سکتا ہے۔ مکئی کو عموماً {lo} سے {hi} چاہیے۔ کچھ خریدنے سے پہلے مٹی کا ٹیسٹ کروائیں۔'),
 'soil_missing':('I do not have reliable soil values for this field. Have the soil tested before deciding on maize.','اس کھیت کی مٹی کے معتبر اعداد موجود نہیں۔ مکئی کا فیصلہ کرنے سے پہلے مٹی کا ٹیسٹ کروائیں۔'),
 'weather':('I have no usable current forecast. Check a fresh local forecast before choosing a sowing day.','موسم کی قابل استعمال تازہ پیش گوئی موجود نہیں۔ بوائی کا دن چننے سے پہلے مقامی تازہ پیش گوئی دیکھیں۔'),
 'drainage_question':('The soil map cannot confirm suitability. Does water remain in your field after rain?','مٹی کا نقشہ موزونیت کی تصدیق نہیں کر سکتا۔ کیا بارش کے بعد کھیت میں پانی رہتا ہے؟'),
 'moisture':('Check moisture below the soil surface before sowing. These records cannot confirm that maize will grow well.','بوائی سے پہلے مٹی کی سطح کے نیچے نمی دیکھیں۔ ان اعداد سے مکئی کی اچھی پیداوار کی تصدیق نہیں ہو سکتی۔')}
-def render(key,language):return T[key][1 if language=='ur' else 0]
+def render(key,language,**values):
+ text=T[key][1 if language=='ur' else 0]
+ return text.format(**values) if values else text
 LANGUAGES={'en':{'enabled':True,'reviewed':False},'ur':{'enabled':True,'reviewed':False,'purpose':'Multilingual demonstration, not primary pilot language'},'sw':{'enabled':False,'reviewed':False}}
