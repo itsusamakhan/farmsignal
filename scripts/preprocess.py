@@ -16,7 +16,15 @@ CREATE TABLE forecasts(issue_time TEXT, valid_from TEXT, valid_until TEXT, downl
 def main():
  man=json.loads((ROOT/'data/manifest.json').read_text()); tmp=DB.with_suffix('.tmp')
  tmp.unlink(missing_ok=True)
- report={'bbox_wsen':BBOX,'soil':{},'weather':{},'limitations':['Mapped soils are not field measurements.','Three historical years are context, not climate normals or a current forecast.','No local agronomist or native Urdu review has been performed.']}
+ # WCS TIFFs omit nodata metadata. Joint zero pH and bulk density is
+ # suspect fill, not usable agricultural evidence. Preserve raw files.
+ suspect=None
+ ph=ROOT/'data/raw/phh2o_0-5cm_mean.tif';bd=ROOT/'data/raw/bdod_0-5cm_mean.tif'
+ if ph.exists() and bd.exists():
+  with rasterio.open(ph) as a,rasterio.open(bd) as b:
+   assert a.shape==b.shape and a.transform==b.transform
+   suspect=(a.read(1)==0)&(b.read(1)==0)
+ report={'bbox_wsen':BBOX,'suspect_joint_zero_cells_per_layer':int(suspect.sum()) if suspect is not None else None,'soil':{},'weather':{},'limitations':['Mapped soils are not field measurements.','Three historical years are context, not climate normals or a current forecast.','No local agronomist or native Urdu review has been performed.']}
  with sqlite3.connect(tmp) as c:
   c.executescript(SCHEMA)
   c.executemany('INSERT INTO farms VALUES (?,?,?,?,?)',[('demo','Kitale demonstration farm',1.02,35.,'maize'),('unregistered','No farm registered',None,None,None),('outside','Outside downloaded region',-1.28,36.8,'maize')])
@@ -30,7 +38,11 @@ def main():
     with rasterio.open(p) as ds:
      assert abs(ds.res[0]-250)<.01 and abs(ds.res[1]-250)<.01
      crs=ds.crs or IGH  # WCS DescribeCoverage declares native EPSG:152160; TIFF omits pseudo CRS
-     a=ds.read(1,masked=True); count=0
+     a=ds.read(1,masked=True)
+     if suspect is not None:
+      assert a.shape==suspect.shape
+      a=np.ma.masked_where(suspect,a)
+     count=0
      for row in range(ds.height):
       for col in range(ds.width):
        if np.ma.is_masked(a[row,col]): continue

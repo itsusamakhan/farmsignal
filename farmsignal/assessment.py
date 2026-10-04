@@ -9,7 +9,7 @@ def assess(evidence,observations,now=None):
   records={r['statistic']:r for r in evidence['soil'] if r['property']=='phh2o' and r['depth']==depth}
   if not all(s in records for s in ('mean','Q0.05','Q0.95')):
    missing.append('soil_pH_'+depth);continue
-  if any(r.get('unit')!='pH' or not isinstance(r.get('value'),(float,int)) or not math.isfinite(r['value']) or not 0<=r['value']<=14 for r in records.values()):
+  if any(r.get('unit')!='pH' or not isinstance(r.get('value'),(float,int)) or not math.isfinite(r['value']) or not 0<r['value']<=14 for r in records.values()):
    missing.append('valid_soil_units_or_values_'+depth);continue
   mean,lower,upper=[records[s]['value'] for s in ('mean','Q0.05','Q0.95')]
   if lower>upper:missing.append('valid_soil_uncertainty_'+depth);continue

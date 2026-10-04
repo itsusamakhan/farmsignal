@@ -87,3 +87,10 @@ def test_tomorrow_not_covered(service):
 def test_crop_substring_not_a_crop(service):
  r=service.respond('What is the price of a tractor?',log=False)
  assert r['next_step_reason']=='clarify'
+
+def test_zero_filled_ph_rejected():
+ e=fixture_evidence()
+ for r in e['soil']:r['value']=0
+ a=assess(e,{})
+ assert not a['soil_findings']
+ assert 'valid_soil_units_or_values_0-5cm' in a['missing_information']

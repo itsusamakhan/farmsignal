@@ -4,7 +4,7 @@
 
 1. Inspected supplied pitch and brief. Distinguished proposed capabilities from implemented behavior.
 2. Checked official source documentation, source licenses, units, forecast dates and the language dataset card.
-3. Downloaded 72 regional SoilGrids rasters and 1,096 daily POWER records. All 7,200 soil cells and weather days are present in this extract. Added two ECMWF GRIB messages through bounded byte ranges.
+3. Downloaded 72 regional SoilGrids rasters and 1,096 daily POWER records. The extract contains 7,200 raw soil values, including suspect zero-filled cells identified and excluded in the later demo-readiness review. Weather has no missing days. Added two ECMWF GRIB messages through bounded byte ranges.
 4. Initial import failed on a SQL placeholder-count mismatch. Fixed and rebuilt atomically.
 5. Grid check exposed the omitted native CRS in WCS TIFFs. Saved the provider's DescribeCoverage and explicitly interpreted its documented Homolosine grid; retained raw files and native 250 m cells.
 6. Ran the scenario/API suite, fixed issues, then reran after forecast integration and cache optimization. Final test output is tests.txt.

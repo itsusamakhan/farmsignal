@@ -5,7 +5,7 @@ Record the real local app at http://127.0.0.1:8765/. Before recording, click Res
 | Time | Action on screen | Narration |
 |---|---|---|
 | 00–08 | Show the clean interface | This is FarmSignal: a local prototype for one question—what should I check before growing maize here? |
-| 08–20 | Click “Check maize suitability”; let the reply appear | I select our demonstration farm and ask about maize. FarmSignal uses the registered location and saved soil evidence to suggest a field soil test. |
+| 08–20 | Click “Check maize suitability”; let the reply appear | I select our demonstration farm and ask about maize. FarmSignal finds that reliable soil evidence is missing at this location and suggests a field soil test. |
 | 20–30 | Click the Urdu example; leave the reply visible | The same workflow supports an Urdu demonstration, with right-to-left text. The translations still need human review. |
 | 30–42 | Click “Report standing water” | Now I report standing water. The next step changes to checking drainage with a local adviser. |
 | 42–51 | Select “No registered location”; click “Check maize suitability” | With no registered location, it asks for that information instead of guessing. |
@@ -15,7 +15,7 @@ Record the real local app at http://127.0.0.1:8765/. Before recording, click Res
 
 This is FarmSignal: a local prototype for one question—what should I check before growing maize here?
 
-I select our demonstration farm and ask about maize. FarmSignal uses the registered location and saved soil evidence to suggest a field soil test.
+I select our demonstration farm and ask about maize. FarmSignal finds that reliable soil evidence is missing at this location and suggests a field soil test.
 
 The same workflow supports an Urdu demonstration, with right-to-left text. The translations still need human review.
 
@@ -27,7 +27,7 @@ Each assessment exposes its evidence and limits. SMS delivery is simulated. We a
 
 ## Recording cautions
 
-The soil-test line assumes the checked-in demonstration cache. Check the actual reply before recording if you synchronize or replace the data. Do not hardcode a reply for filming.
+The missing-soil line reflects the checked-in demonstration cache and its suspect zero-filled cell. Check the actual reply before recording if you synchronize or replace the data. Do not hardcode a reply for filming.
 
 Weather is omitted from this short sequence because forecast validity changes with time. If you show it, narrate the actual current/expired/horizon response. Never change the clock or hide expiry to make the demo work.
 

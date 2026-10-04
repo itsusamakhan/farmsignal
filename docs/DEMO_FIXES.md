@@ -4,8 +4,10 @@ The application now handles explicit dry-soil negation, explains explicit unsupp
 
 Refusal responses include an uncertainty explanation. `intent_abstained` and `advice_status` distinguish question routing from evidence limitations. pH template wording no longer implies that every uncertainty interval proves acidic soil. The UI adds a reset button and readable soil/weather evidence while retaining the full JSON record.
 
-Regression suite: 36 passing cases at this revision. No model weights, synthetic dataset or held-out classifier metrics were changed. The routing and evidence fixes do not establish improved classifier accuracy.
+Regression suite: 37 passing cases at this revision. No model weights, synthetic dataset or held-out classifier metrics were changed. The routing and evidence fixes do not establish improved classifier accuracy.
 
 Still requires external work: local agronomist and native-language review, real farmer questions, independent model evaluation, a real SMS/modem integration, supervised farmer trials, cost and outcome measurement. None of these is silently claimed as fixed.
 
 Video scripts: [technical explainer](video-kit/TECHNICAL_EXPLAINER.md), [one-minute demo](video-kit/DEMO_VIDEO.md), [recording guide](video-kit/RECORDING_GUIDE.md).
+
+Final visual inspection also revealed zero-filled soil cells without nodata metadata. Preprocessing now excludes cells where both surface mean pH and bulk density are zero, treating them conservatively as suspect fill across aligned layers. Raw files are unchanged. The original demonstration registration remains unchanged and now correctly receives a missing-soil response. Earlier reports claiming all 7,200 cells were valid were incorrect; see the regenerated quality report. This is a data-quality exclusion, not a maize threshold.
