@@ -1,0 +1,1 @@
+{"error":"Parquet error: Scan size limit exceeded: attempted to read 793606179 bytes, limit is 300000000 bytes\n\nMake sure that\n\n1. the Parquet files contain a page index to enable random access without loading entire row groups2. otherwise use smaller row-group sizes when serializing the Parquet files\n"}

@@ -1,0 +1,4 @@
+{
+  "peak_inference_process_rss_mib": 129.25,
+  "method": "Fresh process imports Service, loads model/cache, returns one response; resource.getrusage RUSAGE_SELF ru_maxrss."
+}

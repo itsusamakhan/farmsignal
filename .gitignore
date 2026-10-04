@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/audit.jsonl
+data/*.tmp
+
+.DS_Store
+.env
+.env.*
+*.log

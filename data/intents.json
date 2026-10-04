@@ -1,0 +1,1122 @@
+[
+  {
+    "text": "Can I grow maize here?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میں یہاں مکئی اُگا سکتا ہوں؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Is this farm suitable for corn?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا یہ کھیت مکئی کے لیے موزوں ہے؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I want to plant maize on my land",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میں اپنی زمین پر مکئی لگانا چاہتا ہوں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Can maize grow in my field?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میرے کھیت میں مکئی اگ سکتی ہے؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Should I sow corn here?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میں یہاں مکئی بوؤں؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Check this land for planting maize",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مکئی لگانے کے لیے اس زمین کو دیکھیں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Will my farm support maize?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میرے کھیت میں مکئی ہو سکتی ہے؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I plan to cultivate maize",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میں مکئی کاشت کرنے کا ارادہ رکھتا ہوں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Would corn do well on this plot?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا اس قطعے پر مکئی اچھی ہو گی؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Thinking of starting a maize crop",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مکئی کی فصل شروع کرنے کا سوچ رہا ہوں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Before buying maize seed what should I check?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مکئی کا بیج خریدنے سے پہلے کیا دیکھوں؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Is growing corn possible at my registered farm?",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میرے درج شدہ کھیت پر مکئی کی کاشت ممکن ہے؟",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Considering maize for my next season",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "اگلے موسم میں مکئی کی کاشت پر غور کر رہا ہوں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Tell me the limitations for maize cultivation",
+    "intent": "planting",
+    "language": "en",
+    "family": "planting-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مکئی کی کاشت کی رکاوٹیں بتائیں",
+    "intent": "planting",
+    "language": "ur",
+    "family": "planting-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "My soil is acidic",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میری مٹی تیزابی ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "What is the soil pH?",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مٹی کا پی ایچ کیا ہے؟",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "The field is waterlogged",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کھیت میں پانی کھڑا ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Is my soil too sandy?",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میری مٹی بہت ریتلی ہے؟",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I need a soil test",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے مٹی کا ٹیسٹ چاہیے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Check the clay in my soil",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میری مٹی میں چکنی مٹی دیکھیں",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "The soil is hard and dry",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مٹی سخت اور خشک ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "How is the soil quality here?",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "یہاں مٹی کی کیفیت کیسی ہے؟",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Water stays on my land after rain",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "بارش کے بعد میری زمین پر پانی رہتا ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Could soil acidity affect my crop?",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا مٹی کی تیزابیت فصل پر اثر ڈال سکتی ہے؟",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "There are puddles in the maize field",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مکئی کے کھیت میں پانی کے گڑھے ہیں",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Where can I check the acidity of this earth?",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "اس مٹی کی تیزابیت کہاں جانچ سکتا ہوں؟",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "The ground feels like heavy clay",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "زمین بھاری چکنی مٹی جیسی لگتی ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I worry about poor drainage",
+    "intent": "soil",
+    "language": "en",
+    "family": "soil-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے پانی کی ناقص نکاسی کی فکر ہے",
+    "intent": "soil",
+    "language": "ur",
+    "family": "soil-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Will it rain tomorrow?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا کل بارش ہو گی؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "What is the weather forecast?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "موسم کی پیش گوئی کیا ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "How hot will it be?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کتنی گرمی ہو گی؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Is rain expected this week?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا اس ہفتے بارش متوقع ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Tell me about rainfall here",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "یہاں کی بارش کے بارے میں بتائیں",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "What is the temperature?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "درجہ حرارت کیا ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "When will the rains come?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "بارشیں کب آئیں گی؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Do we have a fresh forecast?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا موسم کی تازہ پیش گوئی ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Any chance of showers today?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا آج بارش کا امکان ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Has the coming weather been updated?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا آنے والے موسم کی خبر تازہ ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Should I expect a dry spell next week?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا اگلے ہفتے خشک موسم کی توقع کروں؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "How much precipitation fell last season?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "پچھلے موسم میں کتنی بارش ہوئی؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Are temperatures rising over the weekend?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا ہفتے کے آخر میں درجہ حرارت بڑھ رہا ہے؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Can you check the next few days of rain?",
+    "intent": "weather",
+    "language": "en",
+    "family": "weather-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا اگلے چند دنوں کی بارش دیکھ سکتے ہیں؟",
+    "intent": "weather",
+    "language": "ur",
+    "family": "weather-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I need an agricultural officer",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے زرعی افسر چاہیے",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Please connect me to a human",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے کسی انسان سے رابطہ کروائیں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Can I speak to an adviser?",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میں مشیر سے بات کر سکتا ہوں؟",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Refer me to an extension worker",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے زرعی کارکن کے پاس بھیجیں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I want expert help",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے ماہر کی مدد چاہیے",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Contact an officer for me",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میرے لیے افسر سے رابطہ کریں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I need a person to help",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے مدد کے لیے کسی شخص کی ضرورت ہے",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Please arrange human support",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "براہ کرم انسانی مدد کا انتظام کریں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Could an agronomist visit?",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا زرعی ماہر آ سکتا ہے؟",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Put me in touch with the extension service",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے زرعی توسیعی خدمت سے ملائیں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "I would rather discuss this with a real person",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میں یہ کسی حقیقی شخص سے بات کرنا چاہوں گا",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Who can advise me face to face?",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کون مجھے سامنے بیٹھ کر مشورہ دے سکتا ہے؟",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Find someone qualified to look at my farm",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میرا کھیت دیکھنے کے لیے اہل شخص تلاش کریں",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Could you pass my concern to a specialist?",
+    "intent": "officer",
+    "language": "en",
+    "family": "officer-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کیا میری مشکل کسی ماہر تک پہنچا سکتے ہیں؟",
+    "intent": "officer",
+    "language": "ur",
+    "family": "officer-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Hello",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "سلام",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-0",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "What is the price of a tractor?",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "ٹریکٹر کی قیمت کیا ہے؟",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-1",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Diagnose my sick cow",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میری بیمار گائے کی بیماری بتائیں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-2",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Which pesticide should I spray?",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کون سی کیڑے مار دوا چھڑکوں؟",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-3",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "How much fertilizer should I use?",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کتنی کھاد استعمال کروں؟",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-4",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Tell me a joke",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے لطیفہ سنائیں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-5",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "My leaves have a disease",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میرے پتوں کو بیماری ہے",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-6",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Send me money",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "مجھے پیسے بھیجیں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-7",
+    "split": "train",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Book a bus ticket",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "بس کا ٹکٹ بک کریں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-8",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Something is wrong help",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "کچھ غلط ہے مدد کریں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-9",
+    "split": "validation",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "What is two plus two?",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "دو اور دو کتنے ہوتے ہیں؟",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-10",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "The goats refuse to eat",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "بکریاں کھانا نہیں کھا رہیں",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-11",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "How do I repair my phone?",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "میں اپنا فون کیسے ٹھیک کروں؟",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-12",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "Thanks goodbye",
+    "intent": "unknown",
+    "language": "en",
+    "family": "unknown-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  },
+  {
+    "text": "شکریہ خدا حافظ",
+    "intent": "unknown",
+    "language": "ur",
+    "family": "unknown-13",
+    "split": "test",
+    "provenance": "AI-authored synthetic; Urdu pair is AI translation; no human review"
+  }
+]

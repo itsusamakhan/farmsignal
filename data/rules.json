@@ -1,0 +1,10 @@
+{
+ "version":"0.1.0",
+ "review_status":"Source-checked by AI; pending local agronomist and native Urdu review",
+ "rules":[
+  {"id":"maize_ph","property":"phh2o","unit":"pH","optimal_min":5.0,"optimal_max":7.0,"source":"https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175","applicability":"Global Zea mays screening reference; not a locally validated planting recommendation. Compare every available topsoil depth separately. Bounds crossing the reference interval require field testing."},
+  {"id":"drainage","source":"https://keep.kalro.org/good-agricultural-practices/Maize","applicability":"Kenyan guidance favours well-drained soils. Farmer-reported standing water prompts drainage review, without engineering prescriptions."},
+  {"id":"field_moisture","source":"https://www.kalro.org/maize/maize-land-preparation/","applicability":"Check moisture through the soil profile before sowing; cached regional rainfall cannot establish field moisture."}
+ ],
+ "non_agronomic_policy":{"soil_uncertainty":"Flag missing quantiles or a 90% interval crossing either pH reference boundary. No invented width threshold.","forecast":"Require valid interval, issue time <= now, issue age <=48 hours, verified units and source. 48h is a conservative application freshness policy, not a crop threshold.","other_soil_properties":"Stored for context only. No thresholds or fertilizer prescriptions."}
+}

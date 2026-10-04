@@ -1,0 +1,9 @@
+PASS: OS denied network connection: [Errno 1] Operation not permitted
+ph The soil map suggests a possible acidity limitation. Have your field soil tested before deciding on maize.
+ph مٹی کے نقشے میں تیزابیت کی ممکنہ رکاوٹ ہے۔ مکئی کا فیصلہ کرنے سے پہلے کھیت کی مٹی کا ٹیسٹ کروائیں۔
+drainage You reported standing water. Ask a local adviser to check drainage before planting maize.
+dry You reported dry soil. Check moisture below the surface before sowing maize.
+forecast The saved forecast ends 2026-10-04 12:00 UTC. Check moisture in your field before sowing.
+location Please register your farm location before I check local conditions.
+outside Your farm is outside my saved area. Ask a local agricultural adviser to check it.
+referral_failed The simulated referral failed. No officer was contacted. Please contact your local extension office.

@@ -1,0 +1,525 @@
+{
+  "language_results": {
+    "en": {
+      "keyword": {
+        "macro_f1": 0.6284737484737484,
+        "per_class": {
+          "officer": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "f1-score": 0.6153846153846154,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1-score": 0.5714285714285714,
+            "support": 4.0
+          },
+          "accuracy": 0.65,
+          "macro avg": {
+            "precision": 0.7822222222222222,
+            "recall": 0.65,
+            "f1-score": 0.6284737484737484,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.7822222222222222,
+            "recall": 0.65,
+            "f1-score": 0.6284737484737484,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "There are puddles in the maize field",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "I worry about poor drainage",
+            "expected": "soil",
+            "predicted": "weather"
+          },
+          {
+            "text": "Should I expect a dry spell next week?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "How much precipitation fell last season?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Who can advise me face to face?",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Find someone qualified to look at my farm",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Could you pass my concern to a specialist?",
+            "expected": "officer",
+            "predicted": "unknown"
+          }
+        ]
+      },
+      "classifier_raw": {
+        "macro_f1": 0.5965079365079365,
+        "per_class": {
+          "officer": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1-score": 0.5714285714285714,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1-score": 0.4444444444444444,
+            "support": 4.0
+          },
+          "accuracy": 0.6,
+          "macro avg": {
+            "precision": 0.6466666666666666,
+            "recall": 0.6,
+            "f1-score": 0.5965079365079365,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.6466666666666666,
+            "recall": 0.6,
+            "f1-score": 0.5965079365079365,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "There are puddles in the maize field",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "I worry about poor drainage",
+            "expected": "soil",
+            "predicted": "weather"
+          },
+          {
+            "text": "Should I expect a dry spell next week?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "How much precipitation fell last season?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "I would rather discuss this with a real person",
+            "expected": "officer",
+            "predicted": "weather"
+          },
+          {
+            "text": "Find someone qualified to look at my farm",
+            "expected": "officer",
+            "predicted": "planting"
+          },
+          {
+            "text": "What is two plus two?",
+            "expected": "unknown",
+            "predicted": "weather"
+          },
+          {
+            "text": "The goats refuse to eat",
+            "expected": "unknown",
+            "predicted": "officer"
+          }
+        ]
+      },
+      "classifier_with_abstention": {
+        "macro_f1": 0.3055555555555555,
+        "per_class": {
+          "officer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1-score": 0.4444444444444444,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1-score": 0.3333333333333333,
+            "support": 4.0
+          },
+          "accuracy": 0.4,
+          "macro avg": {
+            "precision": 0.3071428571428571,
+            "recall": 0.4,
+            "f1-score": 0.3055555555555555,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.3071428571428571,
+            "recall": 0.4,
+            "f1-score": 0.3055555555555555,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "Tell me the limitations for maize cultivation",
+            "expected": "planting",
+            "predicted": "unknown"
+          },
+          {
+            "text": "There are puddles in the maize field",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "Where can I check the acidity of this earth?",
+            "expected": "soil",
+            "predicted": "unknown"
+          },
+          {
+            "text": "The ground feels like heavy clay",
+            "expected": "soil",
+            "predicted": "unknown"
+          },
+          {
+            "text": "I worry about poor drainage",
+            "expected": "soil",
+            "predicted": "weather"
+          },
+          {
+            "text": "Should I expect a dry spell next week?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "How much precipitation fell last season?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Can you check the next few days of rain?",
+            "expected": "weather",
+            "predicted": "unknown"
+          },
+          {
+            "text": "I would rather discuss this with a real person",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Who can advise me face to face?",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Find someone qualified to look at my farm",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "Could you pass my concern to a specialist?",
+            "expected": "officer",
+            "predicted": "unknown"
+          }
+        ]
+      },
+      "abstention_rate": 0.7,
+      "incorrect_confident_count": 2
+    },
+    "ur": {
+      "keyword": {
+        "macro_f1": 0.8484126984126984,
+        "per_class": {
+          "officer": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1-score": 0.8571428571428571,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1-score": 0.8571428571428571,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "accuracy": 0.85,
+          "macro avg": {
+            "precision": 0.8699999999999999,
+            "recall": 0.85,
+            "f1-score": 0.8484126984126984,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.8699999999999999,
+            "recall": 0.85,
+            "f1-score": 0.8484126984126984,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "اگلے موسم میں مکئی کی کاشت پر غور کر رہا ہوں",
+            "expected": "planting",
+            "predicted": "weather"
+          },
+          {
+            "text": "مکئی کے کھیت میں پانی کے گڑھے ہیں",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "کون مجھے سامنے بیٹھ کر مشورہ دے سکتا ہے؟",
+            "expected": "officer",
+            "predicted": "unknown"
+          }
+        ]
+      },
+      "classifier_raw": {
+        "macro_f1": 0.888888888888889,
+        "per_class": {
+          "officer": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "accuracy": 0.9,
+          "macro avg": {
+            "precision": 0.9199999999999999,
+            "recall": 0.9,
+            "f1-score": 0.888888888888889,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.9199999999999999,
+            "recall": 0.9,
+            "f1-score": 0.888888888888889,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "مکئی کے کھیت میں پانی کے گڑھے ہیں",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "مجھے پانی کی ناقص نکاسی کی فکر ہے",
+            "expected": "soil",
+            "predicted": "unknown"
+          }
+        ]
+      },
+      "classifier_with_abstention": {
+        "macro_f1": 0.6864102564102563,
+        "per_class": {
+          "officer": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 4.0
+          },
+          "planting": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+          },
+          "soil": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+          },
+          "unknown": {
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "f1-score": 0.6153846153846154,
+            "support": 4.0
+          },
+          "weather": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "accuracy": 0.7,
+          "macro avg": {
+            "precision": 0.8388888888888889,
+            "recall": 0.7,
+            "f1-score": 0.6864102564102563,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.8388888888888889,
+            "recall": 0.7,
+            "f1-score": 0.6864102564102563,
+            "support": 20.0
+          }
+        },
+        "errors": [
+          {
+            "text": "مکئی کی کاشت کی رکاوٹیں بتائیں",
+            "expected": "planting",
+            "predicted": "unknown"
+          },
+          {
+            "text": "مکئی کے کھیت میں پانی کے گڑھے ہیں",
+            "expected": "soil",
+            "predicted": "planting"
+          },
+          {
+            "text": "مجھے پانی کی ناقص نکاسی کی فکر ہے",
+            "expected": "soil",
+            "predicted": "unknown"
+          },
+          {
+            "text": "کون مجھے سامنے بیٹھ کر مشورہ دے سکتا ہے؟",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "میرا کھیت دیکھنے کے لیے اہل شخص تلاش کریں",
+            "expected": "officer",
+            "predicted": "unknown"
+          },
+          {
+            "text": "کیا میری مشکل کسی ماہر تک پہنچا سکتے ہیں؟",
+            "expected": "officer",
+            "predicted": "unknown"
+          }
+        ]
+      },
+      "abstention_rate": 0.45,
+      "incorrect_confident_count": 1
+    }
+  },
+  "performance": {
+    "warm_response_ms": {
+      "p50": 20.332354004494846,
+      "p95": 55.85222489899024,
+      "samples": 100
+    },
+    "cold_process_response_ms": {
+      "p50": 1788.86125003919,
+      "p95": 6547.983850026502,
+      "samples": 5
+    },
+    "peak_evaluation_process_rss_mib": 139.234375,
+    "model_bytes": 69600,
+    "hardware": "macOS-26.2-arm64-arm-64bit arm64",
+    "python": "3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]"
+  },
+  "limitations": [
+    "40 AI-authored test examples total; same author as training, so independence is limited.",
+    "Bilingual semantic families are assigned wholly to one split; no random row split.",
+    "Test errors not used to tune the model.",
+    "No farmer or agronomist validation, no suitability accuracy claim.",
+    "RSS includes evaluation libraries, model and data; not device-wide memory."
+  ]
+}

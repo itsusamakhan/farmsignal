@@ -1,0 +1,6 @@
+{
+  "localhost_http_samples": 30,
+  "p50_ms": 14.76172893308103,
+  "p95_ms": 42.74229099974036,
+  "includes": "HTTP, input validation, inference, evidence lookup, JSON serialization and audit logging"
+}
