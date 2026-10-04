@@ -1,5 +1,5 @@
 import re,json,time,hashlib
-from datetime import datetime,timezone
+from datetime import datetime,timezone,timedelta
 from .config import BBOX,ROOT
 from .model import IntentModel,normalize
 from .store import Store
@@ -12,17 +12,21 @@ class Service:
   start=time.perf_counter(); prediction=self.model.predict(text);lang=prediction['language'];t=normalize(text);farm=self.store.farm(farm_id)
   # Explicit structured fields take precedence. No guessed coordinates from messages.
   unsupported=['wheat','rice','cocoa','cotton','tomato','گندم','چاول','کپاس','ٹماٹر']
-  explicit_bad=next((x for x in unsupported if x in t),None)
+  explicit_bad=next((x for x in unsupported if re.search(r'(?<!\w)'+re.escape(x)+r'(?!\w)',t)),None)
   used_crop=crop.lower() if crop else explicit_bad or ('maize' if any(x in t for x in ['maize','corn','مکئی']) else (farm or {}).get('crop'))
   if standing_water is None:
    if any(s in t for s in ['no standing water','not waterlogged','پانی کھڑا نہیں']):standing_water=False
    elif any(s in t for s in ['standing water','waterlogged','puddles','پانی کھڑا ہے']):standing_water=True
-  if dry_soil is None and any(s in t for s in ['dry soil','soil is dry','خشک مٹی','مٹی خشک']):dry_soil=True
+  if dry_soil is None:
+   if any(s in t for s in ['not dry','isn’t dry',"isn't dry",'خشک نہیں']):dry_soil=False
+   elif any(s in t for s in ['dry soil','soil is dry','خشک مٹی','مٹی خشک']):dry_soil=True
   obs={'standing_water':standing_water,'dry_soil':dry_soil}
   r=dict(**prediction,crop=used_crop,location_used=None,data_sources=[],possible_limitations=[],missing_information=[],uncertainty_reason=None,referral={'status':'not_requested','delivered':False,'officer_notified':False},observations=obs,agronomic_confidence=None,template_review_status='AI source-checked draft; human review pending')
   unsafe=any(k in t for k in ['pesticid','fertilizer','disease','spray','کھاد','کیڑے مار','بیماری'])
   if prediction['intent']=='officer':
    r['referral']=self.adapter.refer(referral_fail);key='referral_failed' if referral_fail else 'referral'
+  elif not unsafe and (explicit_bad or (crop and used_crop!='maize')):
+   key='unsupported';r['uncertainty_reason']='Explicit crop outside supported maize workflow.'
   elif prediction['intent']=='unknown' or unsafe or lang=='unknown':
    key='clarify';r['intent']='unknown';r['abstained']=True;r['uncertainty_reason']='Unsupported, ambiguous, or low-confidence message.'
   elif not farm or farm['lat'] is None or farm['lon'] is None:key='location';r['missing_information']=['registered_location']
@@ -46,7 +50,18 @@ class Service:
   if key=='forecast':
    f=r['forecast_used'];end=f['valid_until'][:16].replace('T',' ')
    r['message']=(f"محفوظ پیش گوئی {end} UTC تک ہے۔ بوائی سے پہلے کھیت کی نمی دیکھیں۔" if lang=='ur' else f"The saved forecast ends {end} UTC. Check moisture in your field before sowing.")
-  if key in ('location','outside','crop','unsupported','soil_missing','weather','clarify'):r['abstained']=True
+  if key=='forecast' and any(word in t for word in ['tomorrow','کل']):
+   # Day-level query: require coverage through the requested day's end in UTC.
+   tomorrow_end=(datetime.now(timezone.utc)+timedelta(days=2)).replace(hour=0,minute=0,second=0,microsecond=0)
+   if datetime.fromisoformat(r['forecast_used']['valid_until'])<tomorrow_end:
+    key='forecast_horizon';r['next_step_reason']=key;r['missing_information'].append('forecast_for_requested_day')
+    r['message']=render(key,lang)
+  if key in ('location','outside','crop','unsupported','soil_missing','weather','clarify','forecast_horizon'):
+   r['abstained']=True
+   if not r['uncertainty_reason']:r['uncertainty_reason']='Cannot assess this request: '+key.replace('_',' ')+'.'
+  r['intent_abstained']=prediction['abstained']
+  r['advice_status']='insufficient_evidence' if r['abstained'] else 'next_step_only'
+  if key.startswith('referral'):r['advice_status']='simulated_referral'
   if log:
    # Do not store raw messages, phone numbers, or exact farm locations in audit logs.
    entry={k:r[k] for k in ['intent','next_step_reason','created_at','response_time_ms']}

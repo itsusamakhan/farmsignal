@@ -94,7 +94,7 @@ Measured on macOS ARM64 on 2026-10-04. These results do not establish farmer-fac
 | Raw classifier | 0.597 | 0.889 |
 | Classifier with abstention | 0.306 | 0.686 |
 
-The English classifier underperforms the baseline. The 140 examples are AI-authored and the test set shares the same author. The model is about 68 KiB. The recorded suite has 25 passing tests; localhost HTTP latency was approximately 15 ms median and 43 ms p95 over 30 sequential calls on the measured machine. See full reports for methods and limitations. No CI status or Linux test result is claimed.
+The English classifier underperforms the baseline. The 140 examples are AI-authored and the test set shares the same author. The model is about 68 KiB. The recorded suite has 36 passing tests; localhost HTTP latency was approximately 15 ms median and 43 ms p95 over 30 sequential calls on the measured machine. See full reports for methods and limitations. No CI status or Linux test result is claimed.
 
 ## Repository map
 
@@ -110,6 +110,10 @@ docs/             Architecture, data/schema and maintenance guides
 ```
 
 ## Documentation
+
+- [Demo fixes and remaining gaps](docs/DEMO_FIXES.md)
+- [60-second technical explainer script](docs/video-kit/TECHNICAL_EXPLAINER.md)
+- [60-second demo script](docs/video-kit/DEMO_VIDEO.md) and [recording guide](docs/video-kit/RECORDING_GUIDE.md)
 
 - [System and model architecture](docs/ARCHITECTURE.md)
 - [Institutional maintenance guide](docs/MAINTENANCE.md)

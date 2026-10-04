@@ -1329,10 +1329,12 @@
             "sha256": "0fb188cdb76c20438167c9e75922c2c527d1caeb4d07e80fa2b5dee2b7e6d855"
           }
         },
-        "message": "The soil map suggests a possible acidity limitation. Have your field soil tested before deciding on maize.",
+        "message": "The mapped soil range needs checking in your field. Have the soil tested before deciding on maize.",
         "next_step_reason": "ph",
-        "response_time_ms": 36.954,
-        "created_at": "2026-10-04T08:27:09.698424+00:00"
+        "response_time_ms": 37.386,
+        "created_at": "2026-10-04T09:31:27.027958+00:00",
+        "intent_abstained": false,
+        "advice_status": "next_step_only"
       }
     },
     {
@@ -2663,10 +2665,12 @@
             "sha256": "0fb188cdb76c20438167c9e75922c2c527d1caeb4d07e80fa2b5dee2b7e6d855"
           }
         },
-        "message": "مٹی کے نقشے میں تیزابیت کی ممکنہ رکاوٹ ہے۔ مکئی کا فیصلہ کرنے سے پہلے کھیت کی مٹی کا ٹیسٹ کروائیں۔",
+        "message": "مٹی کے نقشے کے اندازے کی کھیت میں جانچ ضروری ہے۔ مکئی کا فیصلہ کرنے سے پہلے مٹی کا ٹیسٹ کروائیں۔",
         "next_step_reason": "ph",
-        "response_time_ms": 8.062,
-        "created_at": "2026-10-04T08:27:09.706509+00:00"
+        "response_time_ms": 4.766,
+        "created_at": "2026-10-04T09:31:27.032744+00:00",
+        "intent_abstained": false,
+        "advice_status": "next_step_only"
       }
     },
     {
@@ -4000,8 +4004,10 @@
         },
         "message": "You reported standing water. Ask a local adviser to check drainage before planting maize.",
         "next_step_reason": "drainage",
-        "response_time_ms": 7.201,
-        "created_at": "2026-10-04T08:27:09.713731+00:00"
+        "response_time_ms": 4.338,
+        "created_at": "2026-10-04T09:31:27.037094+00:00",
+        "intent_abstained": false,
+        "advice_status": "next_step_only"
       }
     },
     {
@@ -5336,8 +5342,10 @@
         },
         "message": "You reported dry soil. Check moisture below the surface before sowing maize.",
         "next_step_reason": "dry",
-        "response_time_ms": 8.047,
-        "created_at": "2026-10-04T08:27:09.721803+00:00"
+        "response_time_ms": 12.055,
+        "created_at": "2026-10-04T09:31:27.049163+00:00",
+        "intent_abstained": false,
+        "advice_status": "next_step_only"
       }
     },
     {
@@ -5349,7 +5357,7 @@
         "raw_intent": "weather",
         "intent_confidence": 0.8277859741359955,
         "language": "en",
-        "abstained": false,
+        "abstained": true,
         "crop": "maize",
         "location_used": {
           "lat": 1.02,
@@ -6562,7 +6570,8 @@
           "field_drainage_observation",
           "field_soil_test",
           "variety_and_planting_date",
-          "root_zone_moisture"
+          "root_zone_moisture",
+          "forecast_for_requested_day"
         ],
         "uncertainty_reason": "Mapped soil and historical weather cannot establish field-level planting suitability.",
         "referral": {
@@ -6668,10 +6677,12 @@
             "sha256": "0fb188cdb76c20438167c9e75922c2c527d1caeb4d07e80fa2b5dee2b7e6d855"
           }
         },
-        "message": "The saved forecast ends 2026-10-04 12:00 UTC. Check moisture in your field before sowing.",
-        "next_step_reason": "forecast",
-        "response_time_ms": 7.01,
-        "created_at": "2026-10-04T08:27:09.728832+00:00"
+        "message": "My saved forecast does not cover the full day you asked about. Check a fresh local forecast before deciding when to sow.",
+        "next_step_reason": "forecast_horizon",
+        "response_time_ms": 6.613,
+        "created_at": "2026-10-04T09:31:27.055795+00:00",
+        "intent_abstained": false,
+        "advice_status": "insufficient_evidence"
       }
     },
     {
@@ -6692,7 +6703,7 @@
         "missing_information": [
           "registered_location"
         ],
-        "uncertainty_reason": null,
+        "uncertainty_reason": "Cannot assess this request: location.",
         "referral": {
           "status": "not_requested",
           "delivered": false,
@@ -6706,8 +6717,10 @@
         "template_review_status": "AI source-checked draft; human review pending",
         "message": "Please register your farm location before I check local conditions.",
         "next_step_reason": "location",
-        "response_time_ms": 1.635,
-        "created_at": "2026-10-04T08:27:09.730485+00:00"
+        "response_time_ms": 2.588,
+        "created_at": "2026-10-04T09:31:27.058422+00:00",
+        "intent_abstained": false,
+        "advice_status": "insufficient_evidence"
       }
     },
     {
@@ -6733,7 +6746,7 @@
         "missing_information": [
           "regional_coverage"
         ],
-        "uncertainty_reason": null,
+        "uncertainty_reason": "Cannot assess this request: outside.",
         "referral": {
           "status": "not_requested",
           "delivered": false,
@@ -6747,8 +6760,10 @@
         "template_review_status": "AI source-checked draft; human review pending",
         "message": "Your farm is outside my saved area. Ask a local agricultural adviser to check it.",
         "next_step_reason": "outside",
-        "response_time_ms": 1.404,
-        "created_at": "2026-10-04T08:27:09.731900+00:00"
+        "response_time_ms": 5.546,
+        "created_at": "2026-10-04T09:31:27.064067+00:00",
+        "intent_abstained": false,
+        "advice_status": "insufficient_evidence"
       }
     },
     {
@@ -6781,8 +6796,10 @@
         "template_review_status": "AI source-checked draft; human review pending",
         "message": "The simulated referral failed. No officer was contacted. Please contact your local extension office.",
         "next_step_reason": "referral_failed",
-        "response_time_ms": 1.795,
-        "created_at": "2026-10-04T08:27:09.733710+00:00"
+        "response_time_ms": 2.951,
+        "created_at": "2026-10-04T09:31:27.067064+00:00",
+        "intent_abstained": false,
+        "advice_status": "simulated_referral"
       }
     }
   ]

@@ -21,7 +21,7 @@ def assess(evidence,observations,now=None):
  for f in evidence.get('forecasts',[]):
   try:
    issue=datetime.fromisoformat(f['issue_time']);start=datetime.fromisoformat(f['valid_from']);end=datetime.fromisoformat(f['valid_until'])
-   if issue<=now and now-issue<=timedelta(hours=48) and start<=now<end and f['unit']=='mm/24h' and f['source']:
+   if all(isinstance(f.get(k),(int,float)) and math.isfinite(f[k]) for k in ['temperature_c','rain_mm']) and f['rain_mm']>=0 and issue<=start<end and issue<=now and now-issue<=timedelta(hours=48) and start<=now<end and f['unit']=='mm/24h' and f['source']:
     fresh.append(f)
   except (ValueError,TypeError,KeyError):pass
  if not fresh:missing.append('fresh_forecast')
